@@ -1,0 +1,15 @@
+<% include partials/header %>
+<% include partials/navigation %>
+
+<%- include sections/intro -%>
+
+<%- include('sections/portfolio.ejs',{allEntries:portfolio}); -%>
+<%- include('sections/portfolio.ejs',{allEntries:portfolio});  -%>
+
+<% include sections/about %>
+<% include sections/contact %>
+
+<% include partials/tooTopButton %>
+<% include partials/chat %>
+
+<% include partials/footer %>

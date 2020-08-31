@@ -1,0 +1,81 @@
+h2 > a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+h2 > a:hover{
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 black, 0 -1px white;
+}
+p{
+  margin-bottom: 0px;
+}
+
+.bg {
+  top: calc(0% + 40px);
+  left:0%;
+  /* The image used */
+  background-image: url("../picture/landing.jpg");
+
+  /* Full height */
+  height: calc(100% - 40px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+.content{
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  overflow: hidden;
+  height: 357px;
+  min-width: 10px;
+}
+.title{
+  font-size: 2.5em;
+}
+.holder{
+  min-height: 30px;
+  overflow: visible;
+}
+.title, .aboutme, .myproj {
+  display:none;
+  position: relative;
+}
+.social_links {
+  display:none;
+  position: relative;
+}
+.social_links > a:hover{
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  cursor: pointer;
+
+}
+.left{
+    animation: left 2s 1;
+}
+.right{
+    animation: right 2s 1;
+}
+
+@keyframes left {
+  0%   { left: -100px; top: 0px;}
+  100% { left: 0px; top: 0px;}
+}
+@keyframes right {
+  0%   { left: 100px; top: 0px;}
+  100% { left: 0px; top: 0px;}
+}
