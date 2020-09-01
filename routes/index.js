@@ -11,7 +11,17 @@ router.get("/", function(req,res){
     if(err){
       console.log(err);
     } else{
-      res.render("index",{catagory: "Tigers" ,portfolio:webProjects});
+
+      Blog.findOne({catagory: "Tigers"}).populate("blogposts").exec( function(err,gameProjects){
+        if(err){
+          console.log(err);
+        } else{
+
+          res.render("index",{catagory: "Tigers" ,portfolioWeb:webProjects, portfolioGame:gameProjects});
+
+        }
+      });
+
     }
   });
 });
@@ -20,19 +30,29 @@ router.get("/register", function(req,res){
   res.render("register");
 });
 
-router.post("/register",function(req,res){
-  var newUser = new User({username: req.body.username});
+router.post("/loginOrRegister", function(req,res){
+  if(req.body.action == "login"){
+
+    passport.authenticate("local")(req, res, function(){
+      req.flash("success", "Successfully Signed In! Welcome back " + req.body.username);
+      return res.redirect('back');
+    });
+
+  }else {
+    var newUser = new User({username: req.body.username});
 
     User.register(newUser, req.body.password, function(err, user){
         if(err){
-            console.log(err);
-            return res.render("register", {error: err.message});
+            req.flash("error", "Failed to register");
+            return res.redirect('back');
         }
         passport.authenticate("local")(req, res, function(){
-           req.flash("success", "Successfully Signed Up! Nice to meet you " + req.body.username);
-          res.redirect("/");
+          req.flash("success", "Successfully Signed Up! Nice to meet you " + req.body.username);
+          return res.redirect('back');
         });
     });
+
+  }
 });
 
 router.get("/login", function(req,res){

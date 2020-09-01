@@ -1,3 +1,6 @@
+.chat{
+  z-index: 1042;
+}
 /* chat boxes */
 .chat-icon{
   background-color: white;
@@ -31,8 +34,8 @@
   height: 49px;
   width: 49px;
   position: fixed;
-  bottom: 5%;
-  right: 4.25%;
+  bottom: 5rem;
+  right: 1rem;
   transition: height 0.5s, width 0.5s;
   -webkit-transition: height 0.5s , width 0.5s;
   text-align: center;

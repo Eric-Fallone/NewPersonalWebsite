@@ -13,4 +13,10 @@
             </ul>
         </div>
     </div>
+    <% if(error && error.length > 0) { %>
+      <div class="flash danger text-danger" style="margin-bottom: 0px;" ><p><%=error %></p></div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+      <div class="flash success text-success" style="margin-bottom: 0px;" ><p><%= success %></p></div>
+    <% } %>
 </nav>

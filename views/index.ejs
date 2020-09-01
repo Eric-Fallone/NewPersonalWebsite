@@ -3,8 +3,9 @@
 
 <%- include sections/intro -%>
 
-<%- include('sections/portfolio.ejs',{allEntries:portfolio}); -%>
-<%- include('sections/portfolio.ejs',{allEntries:portfolio});  -%>
+<%- include('sections/portfolio.ejs',{allEntries:portfolioWeb}); -%>
+<% include partials/spacer %>
+<%- include('sections/portfolio.ejs',{allEntries:portfolioGame});  -%>
 
 <% include sections/about %>
 <% include sections/contact %>
