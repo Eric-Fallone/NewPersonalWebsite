@@ -7,20 +7,20 @@ module.exports = {
           return next();
       }
       req.flash('error', 'You must be signed in to do that!');
-      res.redirect('/login');
+      res.redirect('/');
   },
   checkUserPost: function(req, res, next){
     Post.findOne({title: req.params.title}, function(err, foundPost){
       if(err || !foundPost){
           console.log(err);
           req.flash('error', 'Sorry, that blog post does not exist!');
-          res.redirect('/blog/' + req.params.catagory);
+          res.redirect("/");
       } else if(foundPost.author.id.equals(req.user._id) || req.user.isAdmin){
           req.post = foundPost;
           next();
       } else {
           req.flash('error', 'You don\'t have permission to do that!');
-          res.redirect('/blog/' + req.params.catagory);
+          res.redirect("/");
       }
     });
   },

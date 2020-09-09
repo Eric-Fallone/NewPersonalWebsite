@@ -17,11 +17,11 @@ router.get("/:catagory", function(req, res){
   });
 });
 //new
-router.get("/:catagory/new",isLoggedIn, function(req,res){
+router.get("/:catagory/new",isLoggedIn, isAdmin, function(req,res){
   res.render("blog/new",{catagory: req.params.catagory});
 });
 //create
-router.post("/:catagory", isLoggedIn, function(req, res){
+router.post("/:catagory", isLoggedIn, isAdmin, function(req, res){
 
   var author = {
     id: req.user._id,
@@ -40,7 +40,7 @@ router.post("/:catagory", isLoggedIn, function(req, res){
           blog.blogposts.push(newlycreated._id);
           blog.save();
           newlycreated.save();
-          res.redirect("/blog/"+req.params.catagory)
+          res.redirect("/");
         }
       });
     }
@@ -66,14 +66,14 @@ router.get("/:catagory/:title/edit",isLoggedIn,checkUserPost, function(req, res)
 //update
 router.put("/:catagory/:title/edit",isLoggedIn,checkUserPost, function(req, res){
   var newData = {imgsource: req.body.imgsource, quote: req.body.quote, text: req.body.blogText};
-  
+
   Post.findOneAndUpdate({title:req.params.title}, {$set: newData}, function(err, post){
       if(err){
           req.flash("error", err.message);
           res.redirect("back");
       } else {
           req.flash("success","Successfully Updated!");
-          res.redirect("/blog/"+ post.catagory+"/" + post.title);
+          res.redirect("/");
       }
   });
 });
@@ -94,7 +94,7 @@ router.delete("/:title", isLoggedIn,checkUserPost, function(req, res){
         } else {
           console.log("meow");
             req.flash('success', 'Blog deleted!');
-            res.redirect('/blog/'+cata);
+            res.redirect("/");
         }
       })
 });

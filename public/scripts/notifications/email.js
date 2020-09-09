@@ -10,12 +10,12 @@ var transporter = nodemailer.createTransport({
 
 module.exports={
   sendEmail :function(emailData) {
-    
+
     var mailOptions = {
       from: process.env.ERIC_EMAIL_ACCOUNT,
       to: process.env.ERIC_EMAIL_ACCOUNT,
-      subject:emailData.first+" "+emailData.last+" from "+ emailData.company,
-      text: emailData.company+"\n\n"+emailData.first+" "+emailData.last+"\n\n"+emailData.message+"\n\n"+emailData.telephone
+      subject:emailData.name+" from "+ emailData.company,
+      text: emailData.name + "\n\n"+emailData.company + "\n\n"+emailData.email + "\n\n" + emailData.telephone + "\n\n"+emailData.message
     };
 
     transporter.sendMail(mailOptions, function(error, info){
@@ -23,7 +23,7 @@ module.exports={
         console.log(error);
       } else {
         console.log('Email sent: ' + info.response);
-        discord.webHook(emailData.first+" "+emailData.last+" from "+ emailData.company+" has send you an email.");
+        discord.webHook(emailData.name+" from "+ emailData.company+" has send you an email.");
       }
     });
   }

@@ -5,7 +5,7 @@
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-icon"><i class="fa fa-laptop"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- Portfolio Grid Item-->
@@ -17,7 +17,7 @@
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="<%= allEntries.blogposts[i].imgsource %>" alt="" />
+                    <img class="img-fluid" src="<%= allEntries.blogposts[i].imgsource %>" alt="<%=allEntries.blogposts[i].title %>" />
                 </div>
             </div>
           <% }; %>
@@ -25,7 +25,7 @@
         <!-- Admin Buttons -->
         <% if( currentUser && currentUser.isAdmin ===true ) { %>
         <div class="text-center mt-3 mb-5">
-          <a class="btn btn-primary text-center" href ="/blog/<%= catagory %>/new">Add Post</a>
+          <a class="btn btn-primary text-center" href ="/blog/<%= allEntries.catagory %>/new">Add Post</a>
         </div>
         <% } %>
     </div>
@@ -49,7 +49,7 @@
                             <!-- Icon Divider-->
                             <div class="divider-custom mb-0">
                                 <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-icon"><i class="fa fa-laptop"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
                             <h1 class="portfolio-modal-title text-secondary mb-3 mt-0" id="portfolioModal<%= i %>Quote"><%=allEntries.blogposts[i].quote %></h1>
@@ -57,13 +57,17 @@
                             <img class="img-fluid rounded mb-5" src="<%=allEntries.blogposts[i].imgsource %>" alt="" />
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-5"><%=allEntries.blogposts[i].text %></p>
+                            <!-- Admin Buttons -->
+                            <% if( currentUser && currentUser.isAdmin ===true ) { %>
+                              <div class="pull-right">
+                                <a class="btn btn-warning" href="/blog/<%= allEntries.catagory %>/<%= allEntries.blogposts[i].title %>/edit">Edit</a>
+                                <form class="delete-form" action="/blog/<%= allEntries.blogposts[i].title %>?_method=DELETE" method="POST">
+                                  <button class="btn btn-xs btn-danger">DELETE</button>
+                                </form>
+                              </div>
+                            <% } %>
                         </div>
-                        <!-- Admin Buttons -->
-                        <% if( currentUser && currentUser.isAdmin ===true ) { %>
-                        <div class="text-center mt-3 mb-5">
-                          <a class="btn btn-primary text-center" href ="/blog/<%= catagory %>/new">Add Post</a>
-                        </div>
-                        <% } %>
+
 
                     </div>
                 </div>

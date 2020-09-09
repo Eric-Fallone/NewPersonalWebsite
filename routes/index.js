@@ -74,22 +74,17 @@ router.get("/logout", function(req, res){
   res.redirect("/");
 });
 
-router.get("/contact", function(req,res){
-  res.render("contact");
-});
-
 router.post("/contact",   function(req, res){
   email = {
-    first:req.body.first,
-    last:req.body.last,
+    name:req.body.name,
+    company:req.body.company,
     email:req.body.email,
-    message:req.body.emailmsg,
-    telephone:req.body.tele,
-    company:req.body.company
+    message:req.body.message,
+    telephone:req.body.phone
   };
   emailer.sendEmail(email);
   req.flash("success","Email sent");
-  res.redirect("/");
+  res.redirect("/#contact");
 });
 
 router.get("/c/:company", function(req,res){
