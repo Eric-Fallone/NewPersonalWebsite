@@ -1,7 +1,7 @@
 {
-  "name": "Personal Website",
+  "name": "newpersonalwebsite",
   "version": "1.0.0",
-  "description": "Website to show off websites",
+  "description": "Remaking my old website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/Eric-Fallone/NewPersonalWebsite.git"
   },
+  "keywords": [
+    "Personal",
+    "website",
+    "full",
+    "stack",
+    "developer",
+    "game",
+    "programmer"
+  ],
   "author": "Eric Fallone",
   "license": "ISC",
   "bugs": {
@@ -17,13 +26,11 @@
   },
   "homepage": "https://github.com/Eric-Fallone/NewPersonalWebsite#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.9",
     "express-session": "^1.17.1",
     "method-override": "^3.0.0",
     "moment": "^2.27.0",
