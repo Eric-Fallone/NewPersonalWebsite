@@ -92,8 +92,7 @@ router.delete("/:title", isLoggedIn,checkUserPost, function(req, res){
             req.flash('error', err.message);
             res.redirect('/');
         } else {
-          console.log("meow");
-            req.flash('success', 'Blog deleted!');
+            req.flash('success', 'Post Deleted');
             res.redirect("/");
         }
       })

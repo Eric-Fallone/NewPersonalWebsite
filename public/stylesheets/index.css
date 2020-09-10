@@ -10088,7 +10088,7 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #9C7636;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10144,6 +10144,7 @@ h3 {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+
 }
 
 @media (min-width: 992px) {

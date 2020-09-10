@@ -4,7 +4,7 @@ var PostSchema = new mongoose.Schema({
     catagory: String,
     title: { type: String, unique:true, require:true},
     imgsource: String,
-    quote: String,
+    link: String,
     text: String,
     createdDate: { type: Date, default: Date.now },
     author: {

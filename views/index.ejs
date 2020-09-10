@@ -1,16 +1,17 @@
-<% include partials/header %>
-<% include partials/navigation %>
+<%- include('partials/header'); %>
+<%- include('partials/navigation'); %>
+<%- include('partials/flash'); %>
 
-<%- include sections/intro -%>
+<%- include('sections/intro'); %>
 
 <%- include('sections/portfolio.ejs',{allEntries:portfolioWeb}); -%>
-<% include partials/spacer %>
-<%- include('sections/portfolio.ejs',{allEntries:portfolioGame});  -%>
+<%- include('partials/spacer'); %>
+<%- include('sections/portfolio.ejs',{allEntries:portfolioGame}); -%>
 
-<% include sections/about %>
-<% include sections/contact %>
+<%- include('sections/about'); %>
+<%- include('sections/contact'); %>
 
-<% include partials/tooTopButton %>
-<% include partials/chat %>
+<%- include('partials/tooTopButton'); %>
+<%- include('partials/chat'); %>
 
-<% include partials/footer %>
+<%- include('partials/footer'); %>

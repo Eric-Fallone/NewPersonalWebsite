@@ -10,7 +10,7 @@
   border-bottom: 1px solid black;
 }
 .chat-icon:hover{
-  background-color: #00ffff;
+  background-color: #9C7636;
   padding: 7px 6px 5px 6px;
 }
 .loginmsg{
@@ -25,6 +25,7 @@
 #login_link:hover{
   cursor: pointer;
 }
+
 
 .chat-box {
   background-color:lightgray;
