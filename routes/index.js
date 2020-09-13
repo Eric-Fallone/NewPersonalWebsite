@@ -7,23 +7,26 @@ var emailer = require("../public/scripts/notifications/email.js")
 
 
 router.get("/", function(req,res){
-  Blog.findOne({catagory: "Programming Projects"}).populate("blogposts").exec( function(err,webProjects){
-    if(err){
-      console.log(err);
-    } else{
+  Blog.findOne(
+    {catagory: "Programming Projects"})
+    .populate({path:"blogposts", options:{ sort:{spot:1}}})
+    .exec( function(err,webProjects){
+      if(err){
+        console.log(err);
+      } else{
 
-      Blog.findOne({catagory: "Tigers"}).populate("blogposts").exec( function(err,gameProjects){
-        if(err){
-          console.log(err);
-        } else{
-
-          res.render("index",{catagory: "Tigers" ,portfolioWeb:webProjects, portfolioGame:gameProjects});
-
+        Blog.findOne(
+          {catagory: "Tigers"})
+          .populate({path:"blogposts", options:{ sort:{spot:1}}})
+          .exec( function(err,gameProjects){
+            if(err){
+              console.log(err);
+            } else{
+              res.render("index",{catagory: "Tigers" ,portfolioWeb:webProjects, portfolioGame:gameProjects});
+            }
+          });
         }
-      });
-
-    }
-  });
+    });
 });
 
 router.get("/register", function(req,res){

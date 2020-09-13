@@ -10071,6 +10071,9 @@ h3 {
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
 }
+.scroll-to-top :hover{
+  background-color: rgba(33, 37, 41, 1);
+}
 
 #mainNav {
   padding-top: 1rem;
@@ -10094,7 +10097,7 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: white;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;

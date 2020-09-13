@@ -4,7 +4,7 @@
   "description": "Remaking my old website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -42,8 +42,5 @@
     "passport-local-mongoose": "^6.0.1",
     "request": "^2.88.2",
     "socket.io": "^2.3.0"
-  },
-  "scripts": {
-    "start": "node app.js"
   }
 }

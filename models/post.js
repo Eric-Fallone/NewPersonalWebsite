@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 
 var PostSchema = new mongoose.Schema({
+    spot: Number,
     catagory: String,
     title: { type: String, unique:true, require:true},
     imgsource: String,

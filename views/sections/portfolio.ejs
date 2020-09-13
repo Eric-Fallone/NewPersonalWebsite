@@ -58,7 +58,7 @@
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-5"><%=allEntries.blogposts[i].text %></p>
                             <!-- Admin Buttons -->
-                            <% if( currentUser && currentUser.isAdmin ===true ) { %>
+                            <% if( currentUser && currentUser.isAdmin === true ) { %>
                               <div class="pull-right">
                                 <a class="btn btn-warning" href="/blog/<%= allEntries.catagory %>/<%= allEntries.blogposts[i].title %>/edit">Edit</a>
                                 <form class="delete-form" action="/blog/<%= allEntries.blogposts[i].title %>?_method=DELETE" method="POST">
