@@ -1,28 +1,33 @@
-<% include ../partials/header %>
+<%- include('../partials/header'); %>
+<%- include('../partials/navigation'); %>
+<header class="masthead bg-primary text-white text-center">
+  <div class="row">
+    <% allUsers.forEach(function(user){ %>
+      <div id="<%= user.username %>" class="col-xs-12 test col-sm-6 container d-flex align-items-center flex-column" style="max-width:280px">
+          <h3 style="color:black;"><%= user.username %></h3>
 
-<div class="row">
-  <% allUsers.forEach(function(user){ %>
-    <div id="<%= user.username %>" class="col-xs-12 col-sm-6">
-        <h3><%= user.username %></h3>
+          <div>
+              <ul class="list-group messages">
+              <% user.chatmsgs.forEach(function(msg){ %>
+                <% if(msg.isEric == true){ %>
+                  <li class="list-group-item isEric"><%= msg.msg %></li>
+                <% }else{ %>
+                  <li class="list-group-item notEric"><%= msg.msg %></li>
+                  <% } %>
+              <% }); %>
+              </ul>
+          </div>
+          <div>
+            <form id="" class="ericMsg" action="">
+              <input id="m" autocomplete="off" />
+              <button>Send</button>
+            </form>
+          </div>
+        </div>
+    <% }); %>
+  </div>
+</header>
+<%- include('../partials/tooTopButton'); %>
+<%- include('../partials/chat'); %>
 
-        <div>
-            <ul class="list-group messages">
-            <% user.chatmsgs.forEach(function(msg){ %>
-              <% if(msg.isEric == true){ %>
-                <li class="list-group-item isEric"><%= msg.msg %></li>
-              <% }else{ %>
-                <li class="list-group-item notEric"><%= msg.msg %></li>
-                <% } %>
-            <% }); %>
-            </ul>
-        </div>
-        <div>
-          <form id="" class="ericMsg" action="">
-            <input id="m" autocomplete="off" />
-            <button>Send</button>
-          </form>
-        </div>
-      </div>
-  <% }); %>
-</div>
-<% include ../partials/footer %>
+<%- include('../partials/footer'); %>

@@ -1,16 +1,16 @@
 <!--chat box-->
 <div class="chat position-fixed">
-  <div id="chatbox-holder" class="container chat-box">
+  <div id="chatbox-holder" class="container chat-box d-flex align-items-center flex-column">
     <div id="chatbox" class="row">
       <div class="col chat-icon">
         <i class="far fa-comment fa-2x"></i>
       </div>
     </div>
   <% if(currentUser){ %>
-      <a id="username" ><%= currentUser.username %></a>
-      <a href="/logout">Logout</a>
 
-      <div>
+      <a id="username" ><%= currentUser.username %></a>
+      <a href="/logout" class="logoutLink" }>(Logout)</a>
+      <div class="test">
           <ul class="list-group messages" id="footer_messages"></ul>
       </div>
       <div>
@@ -22,7 +22,7 @@
 
   <% }else{ %>
 
-    <div class="container" style="max-width: 320px">
+    <div class="container" style="">
       <p style="text-align: center" class="lead">Login to chat</p>
 
       <form action="/loginOrRegister" method="post">

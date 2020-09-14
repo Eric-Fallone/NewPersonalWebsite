@@ -5,12 +5,12 @@
 .chat-icon{
   background-color: white;
   padding: 7px 6px 5px 6px;
-  width:49px;
+  width:267px;
   height:49px;
   border-bottom: 1px solid black;
 }
 .chat-icon:hover{
-  background-color: #9C7636;
+  background-color: #E36414;
   padding: 7px 6px 5px 6px;
 }
 .loginmsg{
@@ -22,10 +22,10 @@
 .loginmsg:hover{
   background-color: #00ffff!important;
 }
+
 #login_link:hover{
   cursor: pointer;
 }
-
 
 .chat-box {
   background-color:lightgray;
@@ -51,18 +51,30 @@
   cursor: pointer;
 }
 
-.messages {
+.test{
   background-color: white;
   border-style: solid;
   border-top: none;
   border-width:1px;
-  height: 240px;
-  width: 240px;
+  height: 200px;
+  width: 232px;
   overflow-y: scroll;
   margin-bottom: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
+.logoutLink{
+  font-size: 60%;
+  color:blue;
+}
+
+.messages {
+
+}
+
 .messages > li{
   padding: 8px 2px 8px 2px;
   margin-top: 2px;

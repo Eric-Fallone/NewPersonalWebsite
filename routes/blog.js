@@ -51,17 +51,6 @@ router.post("/:catagory", isLoggedIn, isAdmin, function(req, res){
 
 });
 
-//show
-router.get("/:catagory/:title", function(req, res){
-  Post.findOne({title:req.params.title} , function(err,foundPost){
-    if(err || !foundPost){
-      //console.log(err);
-    } else{
-      res.render("blog/show",{catagory: req.params.catagory ,post:foundPost});
-    }
-  });
-});
-
 //edit
 router.get("/:catagory/:title/edit",isLoggedIn,checkUserPost, function(req, res){
 var maxPosts;

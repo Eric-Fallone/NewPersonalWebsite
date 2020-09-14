@@ -25,7 +25,7 @@ router.post("/newblog", isLoggedIn, isAdmin, function(req, res){
     if(err){
       console.log(err);
     }else{
-      res.redirect("/blog/"+req.body.title)
+      res.redirect("/")
     }
   });
 });

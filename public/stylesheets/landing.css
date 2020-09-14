@@ -1,17 +1,17 @@
 
 .background_orange_color{
-  background-color: #9C7636;
+  background-color: #E36414;
 }
 .orange_color{
-  color: #9C7636;
+  color: #E36414;
 }
 /* boot strap over loads */
 .active{
-    background-color: #9C7636 !important;
+    background-color: #E36414 !important;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption{
-  background-color: #9C7636 !important;
+  background-color: #E36414 !important;
 }
 h2 > a {
   color: inherit; /* blue colors for links too */
