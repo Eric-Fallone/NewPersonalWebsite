@@ -1,7 +1,5 @@
 //var socket = require('socket.io');
 var discord = require('../notifications/discord.js')
-var User = require("../../../models/user");
-var Msg = require("../../../models/msg");
 
 module.exports={
   startServer: function(server){
@@ -21,12 +19,10 @@ module.exports={
               if(err){
                 console.log(err);
               }else{
-                user.chatmsgs.push(newMsg._id);
-                user.save();
-                newMsg.save();
-                io.emit('chat message', msg);
+                
+  
                 if(newMsg.isEric == false){
-                  discord.webHook("Chat message from: "+msg.user+" - "+ msg.msg);
+                  discord.webHook("Chat message from: ");
                 }
               }
             });

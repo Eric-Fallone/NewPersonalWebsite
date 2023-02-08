@@ -1,7 +1,6 @@
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose"),
     passport    = require("passport"),
     cookieParser = require("cookie-parser"),
     LocalStrategy = require("passport-local"),
@@ -22,18 +21,6 @@ var indexRoute = require("./routes/index"),
      adminRoute = require("./routes/admin"),
      chatRoute = require("./routes/chat");
 
-mongoose.Promise = global.Promise;
-
-mongoose.connect(process.env.MONGOOSE_URL, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology:true,
-  useFindAndModify:false
-}).then(()=> {
-  console.log('Connecected to DB');
-}).catch(err => {
-  console.log("ERROR",err.message);
-});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
