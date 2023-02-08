@@ -1,17 +1,10 @@
 var express = require("express");
 var router  = express.Router();
-var passport = require("passport");
-var Blog = require("../models/blog");
-var User = require("../models/user");
 var emailer = require("../public/scripts/notifications/email.js")
 
 
 router.get("/", function(req,res){
     res.render("index");
-});
-
-router.get("/register", function(req,res){
-  res.render("register");
 });
 
 router.post("/contact",   function(req, res){

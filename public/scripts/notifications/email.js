@@ -23,7 +23,7 @@ module.exports={
         console.log(error);
       } else {
         console.log('Email sent: ' + info.response);
-        discord.webHook(emailData.name+" from "+ emailData.company+" has send you an email.");
+        discord.webHook("Name: " + emailData.name + " from: "+ emailData.company+" has send you an email.");
       }
     });
   }
