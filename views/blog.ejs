@@ -2,7 +2,33 @@
 <%- include('partials/navigation'); %>
 <%- include('partials/flash'); %>
 
-<h1>my tech blog will go here eventually</h1>
+<div class="container">
+    <!-- Portfolio Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fa fa-laptop"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <!-- Portfolio Grid Item-->
+    <div class="row">
+        
+        <div class="divider-custom">
+
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="col-lg-8 mx-auto portfolio-custom">
+            <div class="container d-flex align-items-center flex-column">
+                <%- include('sections/Blog/RollingInTheSheep'); %>
+            </div>
+        </div>
+
+    </div>
+    <!-- Admin Buttons -->
+
+</div>
 
 <%- include('partials/tooTopButton'); %>
 
