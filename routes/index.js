@@ -15,9 +15,16 @@ router.post("/contact",   function(req, res){
     message:req.body.message,
     telephone:req.body.phone
   };
-  emailer.sendEmail(email);
-  req.flash("success","Email sent");
-  res.redirect("/#contact");
+  
+  if(!email.name || !email.message || !email.email){
+    req.flash("error", "Missing Required Field");
+    res.redirect("/#contact");
+  }else {
+
+    emailer.sendEmail(email);
+    req.flash("success", "Email sent");
+    res.redirect("/#contact");
+  }
 });
 
 module.exports = router;
