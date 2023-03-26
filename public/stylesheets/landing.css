@@ -2,6 +2,11 @@
 .background_orange_color{
   background-color: #E36414;
 }
+
+.background_black_color{
+  background-color: black; !important;
+}
+
 .orange_color{
   color: #E36414;
 }
@@ -105,4 +110,36 @@ a {
 @keyframes right {
   0%   { left: 100px; top: 0px;}
   100% { left: 0px; top: 0px;}
+}
+.btn-outline-tiger {
+  color: #E36414;
+  border-color: #E36414;
+}
+.btn-outline-tiger:hover {
+  color: black;
+  background-color: #E36414;
+  border-color: #E36414;
+}
+.btn-outline-tiger:focus, .btn-outline-tiger.focus {
+  box-shadow: 0 0 0 0.2rem rgba(227, 100, 20, 1);
+}
+.btn-outline-primary.disabled, .btn-outline-tiger:disabled {
+  color: #E36414;
+  background-color: transparent;
+}
+.btn-outline-tiger:not(:disabled):not(.disabled):active, .btn-outline-tiger:not(:disabled):not(.disabled).active, .show > .btn-outline-tiger.dropdown-toggle {
+  color: black;
+  background-color: #E36414;
+  border-color: #E36414;
+}
+.btn-outline-tiger:not(:disabled):not(.disabled):active:focus, .btn-outline-tiger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-tiger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(227, 100, 20, 1);
+}
+
+.text-orange {
+  color: #E36414 !important;
+}
+
+.text-black{
+  color: black;
 }
