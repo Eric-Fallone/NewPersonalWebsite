@@ -1999,7 +1999,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #E36414;
-  background-color: #495057;
+  background-color: #662802 !important;
   background-clip: padding-box;
   border: 0.125rem solid #495057;
   border-radius: 0.5rem;
@@ -2020,7 +2020,7 @@ pre code {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #969696 !important;
   border-color: #6bebd1;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
@@ -2030,19 +2030,19 @@ pre code {
   opacity: 1;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #000;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #000;
   opacity: 1;
 }
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #000;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #000;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -4043,10 +4043,14 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
-  border-bottom: black;
+  border-bottom: #E36414;
+  background-color: black;
+  color: #E36414;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
+  color: white;
+  background-color: #E36414;
 }
 
 .navbar-toggler-icon {
@@ -10102,11 +10106,9 @@ h3 {
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
+
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #E36414;
+  color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10224,7 +10226,6 @@ h3 {
 
 .floating-label-form-group {
   position: relative;
-  border-bottom: 1px solid #e9ecef;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
