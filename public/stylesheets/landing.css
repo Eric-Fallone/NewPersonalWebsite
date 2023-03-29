@@ -143,3 +143,11 @@ a {
 .text-black{
   color: black;
 }
+
+.margin-top{
+  margin-top: .4em;
+}
+
+.divspacer{
+  padding-top: 4em;
+}

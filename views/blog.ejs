@@ -3,38 +3,32 @@
 <%- include('partials/flash'); %>
 
 <div class="container">
-    <!-- Portfolio Section Heading-->
-    <!-- Icon Divider-->
-    <div class="divider-custom">
-     
+    <!-- Blog Section Heading-->
+    <div class="masthead background_orange_color d-flex align-items-center flex-column">
+        <h1 class="masthead-heading text-uppercase text-white mb-0">Technical Blog</h1>
     </div>
     <!-- Portfolio Grid Item-->
     <div class="row portfolio-text">
-
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-        </div>
-
+        
         <div class="col-lg-8 mx-auto portfolio-custom">
             <div class="container d-flex align-items-center flex-column">
                 <%- include('sections/Blog/ResourceBarBlog.ejs'); %>
             </div>
         </div>
-        
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <div class="col-lg-8 mx-auto portfolio-custom">
-            <div class="container d-flex align-items-center flex-column">
-                <%- include('sections/Blog/RollingInTheSheepPauseMenu.ejs'); %>
-            </div>
+    </div>
+</div>
+   
+<!-- Blog spacer -->
+<div class="divider-custom background_orange_color divspacer"></div>
+    
+<div class="container text-orange">
+    <div class="col-lg-8 mx-auto portfolio-custom">
+        <div class="container d-flex align-items-center flex-column">
+            <%- include('sections/Blog/RollingInTheSheepPauseMenu.ejs'); %>
         </div>
     </div>
-    <!-- Admin Buttons -->
-
 </div>
-
+    
 <%- include('partials/tooTopButton'); %>
 
 <%- include('partials/footer'); %>
