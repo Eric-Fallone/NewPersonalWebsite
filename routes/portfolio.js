@@ -11,6 +11,10 @@ router.get("/CupCakeMage", function(req,res){
     res.render("sections/Portfolios/Full Page/CupCakeMage");
 });
 
+router.get("/Employee11871", function(req,res){
+    res.render("sections/Portfolios/Full Page/EmployeeGame");
+});
+
 router.get("/RollingInTheSheep", function(req,res){
     res.render("sections/Portfolios/Full Page/RollingInTheSheep");
 });
