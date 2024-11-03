@@ -7,6 +7,10 @@ router.get("/", function(req,res){
     res.render("index");
 });
 
+router.get("/BlackMatter", function(req,res){
+    res.render("sections/Portfolios/Full Page/BlackMatterPortfolio");
+});
+
 router.get("/CupCakeMage", function(req,res){
     res.render("sections/Portfolios/Full Page/CupCakeMage");
 });
