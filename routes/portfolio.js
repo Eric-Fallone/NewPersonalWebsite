@@ -27,4 +27,8 @@ router.get("/TheSorrowOfSilk" , function(req,res){
     res.render("sections/Portfolios/Full Page/TheSorrowOfSilk");
 });
 
+router.get("/NoManNorth" , function(req,res){
+    res.render("sections/Portfolios/Full Page/NoManNorth");
+});
+
 module.exports = router;

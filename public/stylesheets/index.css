@@ -10038,6 +10038,11 @@ h3 {
   align-items: center;
 }
 
+.portfolio-spacer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .divider-custom .divider-custom-line {
   width: 100%;
   max-width: 7rem;
