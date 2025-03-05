@@ -23,8 +23,8 @@ router.get("/RollingInTheSheep", function(req,res){
     res.render("sections/Portfolios/Full Page/RollingInTheSheep");
 });
 
-router.get("/TheSorrowOfSilk" , function(req,res){
-    res.render("sections/Portfolios/Full Page/TheSorrowOfSilk");
+router.get("/ProgramingSample" , function(req,res){
+    res.render("sections/Portfolios/Full Page/ProgramingSample");
 });
 
 router.get("/NoManNorth" , function(req,res){
