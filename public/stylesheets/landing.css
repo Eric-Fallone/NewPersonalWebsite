@@ -112,25 +112,25 @@ a {
   100% { left: 0px; top: 0px;}
 }
 .btn-outline-tiger {
-  color: #E36414;
-  border-color: #E36414;
+  color: #fff ;
+  border-color: #fff ;
 }
 .btn-outline-tiger:hover {
   color: black;
-  background-color: #E36414;
-  border-color: #E36414;
+  background-color: #fff;
+  border-color: #fff ;
 }
 .btn-outline-tiger:focus, .btn-outline-tiger.focus {
   box-shadow: 0 0 0 0.2rem rgba(227, 100, 20, 1);
 }
 .btn-outline-primary.disabled, .btn-outline-tiger:disabled {
-  color: #E36414;
+  color: #fff ;
   background-color: transparent;
 }
 .btn-outline-tiger:not(:disabled):not(.disabled):active, .btn-outline-tiger:not(:disabled):not(.disabled).active, .show > .btn-outline-tiger.dropdown-toggle {
   color: black;
-  background-color: #E36414;
-  border-color: #E36414;
+  background-color: #fff ;
+  border-color: #fff;
 }
 .btn-outline-tiger:not(:disabled):not(.disabled):active:focus, .btn-outline-tiger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-tiger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(227, 100, 20, 1);
@@ -154,4 +154,9 @@ a {
 
 .tiger-link{
   text-decoration: underline;
+}
+
+.button-padding{
+  padding-top: .4em;
+  padding-bottom: .4em;
 }

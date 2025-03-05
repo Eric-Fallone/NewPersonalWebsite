@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3486ea2a-c459-4129-aa8f-451efc6247e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/views/sections/Portfolios/Full Page/BlackMatterPortfolio.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/BlackMatterMainPage.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/EmployeeGame.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/EmployeeGame.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/intro.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/intro.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/portfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/portfolio.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="3486ea2a-c459-4129-aa8f-451efc6247e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +26,9 @@
   &quot;keyToString&quot;: {
     &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Development-Branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,6 +57,16 @@
       <updated>1728670628534</updated>
       <workItem from="1728670629989" duration="4884000" />
       <workItem from="1729780742415" duration="4843000" />
+      <workItem from="1732478608695" duration="2652000" />
+      <workItem from="1732554792999" duration="4660000" />
+      <workItem from="1732631661183" duration="4494000" />
+      <workItem from="1740619863505" duration="3099000" />
+      <workItem from="1740669374904" duration="17712000" />
+      <workItem from="1740732744318" duration="3634000" />
+      <workItem from="1740752962870" duration="13036000" />
+      <workItem from="1741010498512" duration="18193000" />
+      <workItem from="1741098035549" duration="24269000" />
+      <workItem from="1741148719552" duration="217000" />
     </task>
     <servers />
   </component>
@@ -70,7 +75,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

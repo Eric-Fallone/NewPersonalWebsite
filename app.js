@@ -10,8 +10,9 @@ var express     = require("express"),
 require('dotenv').config();
 //routes
 var indexRoute = require("./routes/index"),
-    blogRoute = require("./routes/blog"),
-    portfolioRoute = require("./routes/portfolio");
+    blogRoute = require("./routes/Blog"),
+    portfolioRoute = require("./routes/portfolio"),
+    sillyThings = require("./routes/SillyThings");
     
 
 
@@ -43,8 +44,9 @@ app.use(function(req, res, next){
 });
 
 app.use("/",indexRoute);
-app.use("/blog",blogRoute);
-app.use("/portfolio",portfolioRoute);
+app.use("/Blog",blogRoute);
+app.use("/Portfolio",portfolioRoute);
+app.use("/SillyThings",sillyThings);
 
 var port = normalizePort(process.env.PORT || '3000');
 
