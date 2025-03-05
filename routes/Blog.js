@@ -4,7 +4,7 @@ var router  = express.Router();
 
 //index
 router.get("/", function(req,res){
-    res.render("blog");
+    res.render("Blog");
 });
 
 

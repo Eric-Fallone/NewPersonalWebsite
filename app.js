@@ -9,9 +9,9 @@ var express     = require("express"),
 
 require('dotenv').config();
 //routes
-var indexRoute = require("./routes/index"),
+var indexRoute = require("./routes/Index"),
     blogRoute = require("./routes/Blog"),
-    portfolioRoute = require("./routes/portfolio"),
+    portfolioRoute = require("./routes/Portfolio"),
     sillyThings = require("./routes/SillyThings");
     
 
