@@ -1,0 +1,37 @@
+﻿
+<h5 class="text-center text-white">Scene Management</h5>
+
+<p class="text-center">Splitting up the scenes is important for a few reason. While it is useful for organization, one of the main reason is for team collaboration when using git, only one person can make changes to a scene at a time.</p>
+
+<img src="https://imgur.com/7bETkYI.png" style="width: 100%; max-width: 100%; height: auto; background-color: white ">
+
+<p class="text-center text-white">Core</p>
+
+<p class="text-center">
+    This scene holds anything that needs to exist for the lifetime of the game. Another quirk to this scene is that it is the single point of entry of the game, even while pressing play in editor mode, this scene will be loaded first. Then for testing purposes you need a script to load to where you want to test/play. 
+</p>
+<img src="https://imgur.com/oabeZlA.png" style="width: 100%; max-width: 100%; height: auto; background-color: white ">
+
+<p class="text-center text-white">Gameplay</p>
+
+<p class="text-center">
+    This scene is similar to core. However, it lives for the lifetime of gameplay. Anything that will live from scene to scene will be here like a score tracker or player inventory. 
+</p>
+
+<p class="text-center text-white">UI</p>
+
+<p class="text-center">
+    Any UI pieces will live here. It can be loaded/unloaded depending on gameplay needs. 
+</p>
+
+<p class="text-center text-white">Environment Scenes</p>
+
+<p class="text-center">
+    These scenes can be anything from level scenes, cutscenes, or props. They hold anything related to the world or section the player is currently in. These are loaded in or out depending on the gameplay. 
+</p>
+
+<p class="text-center text-white">Tool/Cheat Scenes</p>
+
+<p class="text-center">
+    These scenes are for development/tool usage. They can be loaded at will with either a developer button or toggle only available during development builds or inside of unity editor. 
+</p>

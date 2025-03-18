@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3486ea2a-c459-4129-aa8f-451efc6247e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/CupCakeMage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/CupCakeMage.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/SillyThings.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/SillyThings.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,12 @@
       <workItem from="1741010498512" duration="18193000" />
       <workItem from="1741098035549" duration="24269000" />
       <workItem from="1741148719552" duration="217000" />
-      <workItem from="1741179150530" duration="1002000" />
+      <workItem from="1741179150530" duration="3095000" />
+      <workItem from="1741292143231" duration="3090000" />
+      <workItem from="1741894421744" duration="951000" />
+      <workItem from="1741980200494" duration="817000" />
+      <workItem from="1742055395803" duration="1251000" />
+      <workItem from="1742182244530" duration="1216000" />
     </task>
     <servers />
   </component>
