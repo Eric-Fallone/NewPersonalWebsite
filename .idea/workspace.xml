@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3486ea2a-c459-4129-aa8f-451efc6247e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Full Page/BlackMatterPortfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Full Page/BlackMatterPortfolio.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/BlackMatterMainPage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/BlackMatterMainPage.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sections/portfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/portfolio.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Bullet-Heaven/Bullet Heaven/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -110,6 +108,8 @@
       <workItem from="1752252553077" duration="48000" />
       <workItem from="1756741972559" duration="7838000" />
       <workItem from="1756785111528" duration="407000" />
+      <workItem from="1757217220626" duration="52000" />
+      <workItem from="1757257249142" duration="715000" />
     </task>
     <servers />
   </component>
