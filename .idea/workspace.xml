@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3486ea2a-c459-4129-aa8f-451efc6247e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/scripts/Wave.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Full Page/BlackMatterPortfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Full Page/BlackMatterPortfolio.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/BlackMatterMainPage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/Portfolios/Main Page/BlackMatterMainPage.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/sections/portfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sections/portfolio.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
